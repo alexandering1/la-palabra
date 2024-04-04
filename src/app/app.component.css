@@ -1,0 +1,52 @@
+.main-Conten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.parentTile {
+  display: flex;
+  align-content: center;
+  gap: 2px;
+}
+
+.TECLADO {
+  width: 512px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.TECLADO button {
+  height: 40px;
+  width: 50px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 0%;
+  font-size: 10px;
+  border-radius: 5px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+@keyframes rotateInX {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+.rotate-in-x {
+  animation: rotateInX 0.5s ease-in-out;
+  color: white;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=app.component.css.map */

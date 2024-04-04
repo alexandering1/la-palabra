@@ -1,0 +1,13 @@
+<h1 class="titulo">LA PALABRA DE AHORA</h1>
+
+<div class="main-Conten">
+  <div class="tiles">
+    <ng-container *ngFor="let fila of cajas">
+      <div class="fila">
+        <app-casilla *ngFor="let casilla of fila" [casilla]="casilla"></app-casilla>
+      </div>
+    </ng-container>
+  </div>
+  <app-teclado (keyPressed)="handleChange($event)"></app-teclado>
+</div>
+>

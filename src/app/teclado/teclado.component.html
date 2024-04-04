@@ -1,0 +1,15 @@
+<div class="TECLADO">
+    <ng-container *ngFor="let item of TECLADO">
+      <ng-container *ngIf="(item.key!=='ENTER')&&(item.key!=='BACKSPACE')">
+        <button (click)="handleClick(item.key)"
+          [ngClass]="{'grey': item.class === 'grey', 'yellow': item.class === 'yellow', 'green': item.class === 'green'}">{{ item.key }}</button>
+      </ng-container>
+      <ng-container *ngIf="item.key==='ENTER'">
+        <button (click)="handleClick(item.key)" style="width: 70px;">{{ item.key }}</button>
+      </ng-container>
+      <ng-container *ngIf="item.key==='BACKSPACE'">
+        <button (click)="handleClick(item.key)" style="width: 90px;">{{ item.key }}</button>
+      </ng-container>
+    </ng-container>
+  </div>
+  
